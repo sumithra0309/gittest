@@ -1,4 +1,3 @@
-test
 Pending article comments
 
 url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/articles/comments/list/?approved=False

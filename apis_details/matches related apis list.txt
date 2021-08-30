@@ -1,7 +1,0 @@
-ScoreCard API	          http://127.0.0.1:8000/api/scorecard/12904/
-MatchDetail API	          http://127.0.0.1:8000/api/match/detail/22893/
-Matches Update API	  http://127.0.0.1:8000/api/matches/update/22893/
-Innings Detail API	  http://127.0.0.1:8000/api/innings/details/38324/
-Match Event Details API	  http://127.0.0.1:8000/api/match/event/details/22893/
-Player Team wise List API http://127.0.0.1:8000/api/player/team/list/?team_id=57
-Dismissal Type List API	  http://127.0.0.1:8000/api/dismissaltype/list/

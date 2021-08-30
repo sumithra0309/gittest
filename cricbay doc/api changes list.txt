@@ -1,0 +1,107 @@
+Articles:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/articles/
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/articles/update/809/
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/articles/update/status/809/
+Note:Rename -> player - author
+Rename-> updated_by - last_updated_by
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/articles/comments/
+Note:
+Rename -> player-created_by
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/articles/comments/update/2/
+add last_updated_by
+
+Discussions:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/discussions/update/2/
+Note: Add last_updated_by
+
+Roles:
+
+user role:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/user/role/
+Note: add created_by
+
+ticket_updates update:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ticket/updates/update/2/
+Note:updated_by to last_updated_by
+
+Configuration:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/configuration/
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/configuration/update/1/
+Note added created_by
+added last_updated_by
+
+trusted apps:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/trustedapps/
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/trustedapps/update/1/
+Note: added created_by and last_updated_by
+
+
+run graph:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/rungraph/
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/rungraph/update/1/
+Note:added created_by 
+
+
+power play:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/powerplay/
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/powerplay/update/1/
+Note: add created_by and
+rename updated_by to last_updated_by
+
+
+umpire_rating:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/umpirerating/
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/umpirerating/update/1/
+rename updated_by to last_updated_by
+
+
+permit source:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/permitsource/
+Note: add created_by
+
+ground:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ground/
+Note: add created_by
+
+ground ppermit create:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ground/permit/
+Note:add created_by
+
+innings:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/innings/
+Note: add created_by
+
+inningbat:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/innings/bat/
+Note: add created_by
+
+inningbowl:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/innings/bowl/
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/innings/bowl/update/1/
+Note: add created_by and rename updated_by to last_updated_by
+
+
+matches:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/matches/update/1/
+Note rename updated_by to last_updated_by
+
+match comments:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/matches/comments/
+Note : rename player to created_by
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/matches/comments/update/1/
+Note:add last_updated_by
+
+team credits:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/team/credits/
+Note: add created_by
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/team/credits/update/1/
+Note: rename updated_by to last_updated_by
+
+team update:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/team/update/1/
+Note: rename -> updated_by to last_updated_by
+
+
