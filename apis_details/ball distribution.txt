@@ -1,0 +1,17 @@
+Ball Distribution:
+
+Record a Ball Pick up:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/team/ball/pickups/
+method:POST
+payload:
+{
+    "team": null,
+    "picked_up_by": null,
+    "picked_up_from": null,
+    "number_of_packets": null,
+    "pick_up_date": null,
+    "is_part_of_quota": false,
+    "comments": "",
+    "created_by": null
+}
+

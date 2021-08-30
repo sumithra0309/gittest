@@ -1,0 +1,37 @@
+discussions
+
+discussion details url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/discussions/details/2170/
+
+submit a new response:
+url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/discussion/responses/
+method: post
+Json Format:
+{
+    "discussion": null,
+    "player": null,
+    "description": ""
+}
+
+
+close discussion url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/discussions/update/status/2170/
+method:POST
+Json Format:
+{"action":"close",
+"reason":"",
+"player_id": 8310
+}
+
+retrieve discussions url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/discussions/2170/
+
+discussions update:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/discussions/update/2170/
+method:PUT
+Json Format:
+{
+    "league": null,
+    "discussion_type": null,
+    "player": null,
+    "description": "",
+    "subject": "
+}
+

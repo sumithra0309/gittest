@@ -1,0 +1,88 @@
+Sponsor Directoy
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/partner/list/
+
+Add Sponsor:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/partner/
+method:POST
+Payload:
+{
+    "partner_name": "",
+    "address": "",
+    "phone": "",
+    "email_id": "",
+    "contact_name": "",
+    "created_by": null
+}
+
+Update Sponsor:
+Retrieve url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/partner/11/ -> partner_id
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/partner/update/11/
+method:PUT
+Payload:
+{
+    "partner_name": "",
+    "address": "",
+    "phone": "",
+    "email_id": "",
+    "contact_name": "",
+    "last_updated_by": null
+}
+
+
+Ad Campaigns:
+
+list url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/adcampaign/list/
+  
+
+Create an Add Campaign:
+sponsor dropdown list: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/partner/list/
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/adcampaign/
+
+method:POST
+Payload:
+{
+    "league": null,
+    "partner": null,
+    "campaign_name": "",
+    "start_date": null,
+    "end_date": null,
+    "image_name": "",
+    "ad_slot": "",
+    "target_url": "",
+    "note": "",
+    "created_by": null
+}
+
+ad_slot:
+if ad_slot=Right Side Ad:
+
+pls Send ad_slot = "ALLPAGE_RIGHT_NAV"
+
+if ad_slot=Title Sponsor:
+pls Send ad_slot = "TITLE"
+
+
+
+Update Ad Campaign:
+Retrieve Ad campaign url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/adcampaign/1/ -> 1 is campaign id
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/adcampaign/update/1/
+method:PUT
+Payload:
+{
+    "league": null,
+    "partner": null,
+    "campaign_name": "",
+    "start_date": null,
+    "end_date": null,
+    "image_name": "",
+    "ad_slot": "",
+    "target_url": "",
+    "note": "",
+    "last_updated_by": null
+}
+
+
+
+
+

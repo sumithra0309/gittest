@@ -1,0 +1,37 @@
+verified readiness url:
+http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tournament/verifyreadiness/71/
+
+import schedule url:
+http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tournament/importschedule/
+method:POST
+payload:
+{"tournament_event_id": 75,
+"file": file upload,
+"imported_by": 2000
+}
+
+
+schedule publish url:
+http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tournament/schedulepublish/
+method:POST
+payload:
+{"import_id": "sjkdfhksd",
+"published_by": 2000
+}
+
+import reschedule url:
+http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tournament/importreschedule/
+method:POST
+payload:
+{"tournament_event_id": 75,
+"file": file upload,
+"imported_by": 2000
+}
+
+Reschedule publish url:
+http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tournament/reschedulepublish/
+method: POST
+payload:
+{"import_id": "sjkdfhksd",
+"last_updated_by": 2000
+}

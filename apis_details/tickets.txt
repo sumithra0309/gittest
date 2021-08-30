@@ -1,0 +1,41 @@
+
+Approvals - tickets 
+GET Ticket details through url  - http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tickets/details/6886ED43-80A1-4593-A898-BCDE69588BBF/
+
+url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tickets/update/c37e4293-12ea-4dd1-b456-6e7a53180d53/
+Method: PUT
+ticket/update - assigned_to_volunteer update
+
+{
+    "ticket_type": 46,
+    "assigned_to_volunteer": 8310,
+    "description": "test description",
+    "subject": "test subject",
+    "submitted_by": 2000,
+    "last_updated_by": 1
+}
+
+
+url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tickets/update/c37e4293-12ea-4dd1-b456-6e7a53180d53/
+Method: PUT
+ticket/update:
+
+{
+    "ticket_status": null,
+    "ticket_type": null,- mandatory
+    "match_id1": null,
+    "match_id2": null,
+    "second_team": null,
+    "uticket_id": null,
+    "assigned_to_volunteer": null,
+    "original_ticket_id": null,
+    "orig_ticket_ref_id": "",
+    "description": "", - mandatory
+    "priority": null,
+    "subject": "", - mandatory 
+    "painpoint": "",
+    "archived": false,
+    "email_address": "",
+    "submitted_by": null, - mandatory
+    "last_updated_by": null
+}

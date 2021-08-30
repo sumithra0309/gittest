@@ -1,0 +1,115 @@
+Screen Permissions:
+
+Page:
+
+list api url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/page/list/
+
+create a new page:
+api url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/page/
+method: POST
+Payload:
+{
+    "page_name": "",
+    "restrict": false
+}
+
+Retrieve a page Detail:
+api url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/page/{page_id}/
+
+Edit a Page:
+api url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/page/update/{page_id}/
+method: PUT
+Payload:
+{
+    "page_name": "",
+    "restrict": false
+}
+
+Delete a page:
+api url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/page/delete/{page_id}/
+method: DELETE
+
+Section:
+
+list api url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/section/list/?page_id=3
+
+Create a New section:
+
+api url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/section/
+method:POST
+Payload:
+{
+    "page": null,
+    "section_name": "",
+    "restrict": false
+}
+
+Rertreive a Section details:
+
+api url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/section/{section_id}/
+
+Edit a section"
+
+api url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/section/update/{section_id}/
+method:PUT
+Payload:
+{
+    "page": null,
+    "section_name": "",
+    "restrict": false
+}
+
+
+Delete a section:
+
+api url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/section/delete/{section_id}/
+method:DELETE
+
+Screen Permissions:
+
+list api url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/screen/permissions/list/
+
+Add a new Screen Permission:
+api url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/screen/permissions/
+method:POST
+Payload:
+{"page_id": 3,
+"section_id": null,
+"roles": [17,18]
+}
+
+Retrieve a screen Permission details:
+api url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/screen/permissions/retrieve/
+method: POST
+Payload:
+{"page_id": 3,
+"section_id": null
+}
+
+
+Edit a Screen Permission:
+api url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/screen/permissions/update/
+method:POST
+Payload:
+{"page_id": 3,
+"section_id": null,
+"roles": [17,18]
+}
+
+Delete a Screen permission:
+
+api url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/screen/permissions/delete/
+method: POST
+Payload:
+{"page_id": 3,
+"section_id": null
+}
+
+
+Permission API:
+api url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/permission/
+method:POST
+Payload:
+{"player_id": 1000,
+"page_name": ""
+}

@@ -1,0 +1,78 @@
+Leagues:
+
+list url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/league/list/
+
+Add a new League:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/league/
+method:POST
+payload:
+{
+    "league_name": "",
+    "short_name": "",
+    "code": "",
+    "description": "",
+    "start_date": null,
+    "created_by": null
+}
+
+User Roles:
+
+list url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/roles/list/
+retrieve role url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/roles/3/  ->3 role_id
+
+Add a new Role:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/roles/
+method: POST
+payload:
+{
+    "role_name": "",
+    "role_desc": "",
+    "created_by": null
+}
+
+Update a Role:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/roles/update/3/
+method:PUT
+payload:
+{
+    "role_name": "",
+    "role_desc": "",
+    "last_updated_by": null
+}
+
+Update Users:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/player/directory/
+method:POST
+payload:
+{"role": 2}
+
+Retrieve Admin Player url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/player/admin/details/24878/   ->24878 is player id
+Update Admin Player url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/player/admin/update/24878/
+method:POST
+Payload:
+{
+        "first_name": "Admin",
+        "last_name": "Tspurs",
+        "email": "admn.tspurs@gmail.com",
+        "phone": "9123456789",
+        "is_active": true,
+        "linkedin_url": "https://www.linkedin.com/in/satheesh-kumar-a6750315/",
+        "facebook_url": "https://www.facebook.com/satheesh.kumar.777",
+        "batting_skill": 7,
+        "bowling_skill": 9,
+        "fielding_pref": 16,
+        "display_image": true,
+        "subscribe_new_posts": false,
+        "roles": [3, 4],
+        "created_by": 2000
+}
+      
+
+
+Banned Users List url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/bannedusers/list/
+
+Banned Ips List url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/bannedips/list/

@@ -1,0 +1,367 @@
+Support Request Types:
+
+list url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ticket/types/detail/list/
+Retrieve Ticket Type url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ticket/types/45/    ->45 is ticket_type_id
+
+Create New Ticket Type:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ticket/types/
+method: POST
+Json Format:
+{
+    "ticket_type_name": "",
+    "description": "",
+    "assigned_to_role": null,
+    "allow_internal_comments": false,
+    "hide_from_public": null,
+    "only_volunteers_create": false,
+    "require_email_address": false,
+    "related_games": null,
+    "allow_team_mates": null,
+    "ticket_view": null,
+    "allow_second_team": false,
+    "instructions": "",
+    "enter_message": "",
+    "exit_message": "",
+    "created_by": null
+}
+
+Update Ticket Type:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ticket/types/update/45/   -> 45 is ticket type id
+method:PUT
+Json Format:
+{
+    "ticket_type_name": "",
+    "description": "",
+    "assigned_to_role": null,
+    "allow_internal_comments": false,
+    "hide_from_public": null,
+    "only_volunteers_create": false,
+    "require_email_address": false,
+    "related_games": null,
+    "allow_team_mates": null,
+    "ticket_view": null,
+    "allow_second_team": false,
+    "instructions": "",
+    "enter_message": "",
+    "exit_message": "",
+    "last_updated_by": null
+}
+
+
+Support Request Statuses:
+
+list url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ticket/statuses/list/
+Ticket statuses Retrieve url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ticket/statuses/2/   -> 2 is ticket statuses id
+
+Add New Ticket Status:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ticket/statuses/
+method:POST
+Json Format:
+{
+    "status_name": "",
+    "description": "",
+    "requires_related_ticket": false,
+    "created_by": null
+}
+
+Edit Ticket Status:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ticket/statuses/update/2/
+method:PUT
+Json Format:
+{
+    "status_name": "",
+    "description": "",
+    "requires_related_ticket": false,
+    "last_updated_by": null
+}
+
+
+Post Categories:
+
+list url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/articles/category/list/
+Retrieve Article Category url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/articles/category/2/   -> 2 is article category id
+
+
+Add new Article Category:  
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/articles/category/
+method:POST
+Json format:
+{
+    "category_name": "",
+    "only_allow_volunteers": false,
+    "allow_all_others": false,
+    "description": "",
+    "allow_comments": false,
+    "display_author": false,
+    "require_unpublish_date": false,
+    "created_by": null
+}
+
+Update Article Category: 
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/articles/category/update/1/
+method:PUT
+Json Format:
+{
+    "category_name": "",
+    "only_allow_volunteers": false,
+    "allow_all_others": false,
+    "description": "",
+    "allow_comments": false,
+    "display_author": false,
+    "require_unpublish_date": false,
+    "last_updated_by": null
+}
+
+
+Discussion Types:
+
+list url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/discussiontype/list/
+Retrieve Discussion Type url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/discussiontype/3/   -> 3 is discussion type id
+
+Add Discussion Type:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/discussiontype/
+method:POST
+Json Format:
+{
+    "discussion_name": "",
+    "description": "",
+    "lifespan": null,
+    "is_active": false,
+    "created_by": null
+}
+
+Update Discussion Type:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/discussiontype/update/3/     -> 3 is discussion type id
+method:PUT
+Json Format:
+{
+    "discussion_name": "",
+    "description": "",
+    "lifespan": null,
+    "is_active": false,
+    "last_updated_by": null
+}
+
+
+Penalty Types:
+
+list url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/penaltytype/list/
+Retrieve Penalty Type url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/penaltytype/1/   -> 1 is penalty type id
+
+Add Penalty Type:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/penaltytype/
+method:POST
+Json Format:
+{
+    "penalty_type_name": "",
+    "description": "",
+    "is_amount_penalty": false,
+    "is_drr_penalty": false,
+    "is_player_ban": false,
+    "is_team_ban": false,
+    "is_captain_ban": false,
+    "is_point_penalty": false,
+    "is_match_related": false,
+    "created_by": null
+}
+
+
+Edit Penalty Type:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/penaltytype/update/1/   -> 1 is Penalty type id
+method:PUT
+Json Format:
+{
+    "penalty_type_name": "",
+    "description": "",
+    "is_amount_penalty": false,
+    "is_drr_penalty": false,
+    "is_player_ban": false,
+    "is_team_ban": false,
+    "is_captain_ban": false,
+    "is_point_penalty": false,
+    "is_match_related": false,
+    "last_updated_by": null
+}
+
+
+Award Types:
+
+list url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/award/list/
+Retrieve Award Type url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/award/1/   -> 1 is award type id
+
+Add New Award Type:
+
+url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/award/
+method:POST
+Json Format:
+{
+    "league": null,
+    "award_name": "",
+    "description": "",
+    "award_scope": "",
+    "award_target": "",
+    "is_inherited_from_team": false,
+    "created_by": null
+}
+
+Update Award Type:
+url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/award/update/1/
+method:PUT
+Json Format:
+{
+    "league": null,
+    "award_name": "",
+    "description": "",
+    "award_scope": "",
+    "award_target": "",
+    "is_inherited_from_team": false,
+    "last_updated_by": null
+}
+
+
+
+
+Payment Types:
+
+list url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/paymenttype/list/
+Retrieve Payment Type url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/paymenttype/2/   -> 2 is payment type id
+
+Add New Payment Type:
+
+url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/paymenttype/
+method: POST
+Json Format:
+{
+    "payment_type_name": "",
+    "description": "",
+    "is_game_related": false,
+    "is_season_related": false,
+    "is_inbound": false,
+    "deduct_from_balance": false,
+    "deposit_to_be_charged": false,
+    "created_by": null
+}
+
+
+Edit Payment Type:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/paymenttype/update/2/   - > 2 is payment type id
+method:PUT
+Json Format:
+{
+    "payment_type_name": "",
+    "description": "",
+    "is_game_related": false,
+    "is_season_related": false,
+    "is_inbound": false,
+    "deduct_from_balance": false,
+    "deposit_to_be_charged": false,
+    "last_updated_by": null
+}
+
+
+Team Groupings:
+
+Team groupings list url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/groupings/list/
+Grouping Members list url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/group/list/
+Grouping Members list url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/group/list/?grouping_id=1       ->based on grouping id can change accordingly
+
+
+
+Game Results:
+
+List url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/result/list/
+Retrieve Game result url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/result/1/    -> 1 is result id
+
+Add New Game Result:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/result/
+method:POST
+Json Format:
+{
+    "description": "",
+    "is_active": false,
+    "finals_only": false,
+    "admin_only": false,
+    "stats_entered": false,
+    "created_by": null
+}
+
+
+Edit Game result:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/result/update/1/
+method:PUT
+Json Format:
+{
+    "description": "",
+    "is_active": false,
+    "finals_only": false,
+    "admin_only": false,
+    "stats_entered": false,
+    "last_updated_by": null
+}
+
+
+
+Volunteer Credit Types:
+
+list url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/volunteertype/list/
+Retrieve Volunteer credit type url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/volunteertype/1/   ->1 is volunteer type id
+
+Add Volunteer Credit Type:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/volunteertype/
+method:POST
+Json Format:
+{
+    "volunteer_type_name": "",
+    "description": "",
+    "created_by": null
+}
+
+Edit Volunteer Credit Type:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/volunteertype/update/1/   -> 1 is volunteer type id
+method:PUT
+Json Format:
+{
+    "volunteer_type_name": "",
+    "description": "",
+    "last_updated_by": null
+}
+
+
+Dismissal Types:
+
+list url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/dismissaltype/list/
+Retrieve Dismissal type url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/dismissaltype/1/   -> 1 is dismissal type id
+
+Edit Dismissal type:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/dismissaltype/update/1/
+method:PUT
+Json Format:
+{
+    "description": "",
+    "short_description": "",
+    "bowler_needed": false,
+    "aidee_needed": false,
+    "last_updated_by": null
+}
+
+
+Match Event Types:
+
+list url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/match/event/type/list/
+
+
+Fielding Positions:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/fieldposition/list/
+
+
+Batting strokes:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/strokes/list/

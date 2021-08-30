@@ -1,0 +1,63 @@
+Schedule :
+schedule list api:
+api url:http://127.0.0.1:8000/api/tournament/schedule/list/
+method:POST
+ payload:
+{"league_id": 1,
+"tournament_event_id": 71,
+"weekend_date": "1/25/2020",
+"team_id": null
+}
+
+free ground list api:
+api url:http://127.0.0.1:8000/api/tournament/schedule/freeground/list/
+method:POST
+payload:
+{"weekend_date": "1/25/2020"
+}
+
+abandoned games list:
+
+api url:http://127.0.0.1:8000/api/tournament/schedule/abandonedallgames/list/
+method: POST
+payload:
+{"league_id": 1,
+"tournament_event_id": 71,
+"weekend_date": "1/25/2020"
+}
+
+
+abandoned games update with reason:
+
+api url:http://127.0.0.1:8000/api/tournament/schedule/abandonedallgames/update/
+method: POST
+payload:
+{"league_id": 1,
+"tournament_event_id": 71,
+"weekend_date": "1/25/2020",
+"reason": "reason"
+}
+
+schedule match details:
+api url:http://127.0.0.1:8000/api/match/reschedule/details/22598/
+method: GET
+
+Reschedule match update api
+api url:http://127.0.0.1:8000/api/match/reschedule/update/22598/
+method: POST
+payload: {
+"match_date": "2021-06-04T05:45:47.486Z",
+"match_time_id": 1,
+"permit_time": "08:30AM",
+"ground_id": 18,
+"umpire1_team_id": 57,
+"umpire2_team_id": 202,
+"player_id": 2000
+}
+
+assign and update umpire api
+create match_playing XI api based on match id and team id
+view match playing xi api based on match id and team id
+Iemail Initiated api
+
+teamlist by player - active teams not dummy teams

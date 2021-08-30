@@ -1,0 +1,166 @@
+For dropdown apis list
+ground type list api - http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ground/types/list/
+permit source list api - http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/permitsource/list/
+city list api - http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/city/list/
+ground list api - http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ground/list/	
+
+
+New Ground registration:
+
+url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ground/
+Method: POST
+json format:
+
+{
+    "ground_type": null,
+    "league": null,
+    "city": null,
+    "permit_source": null,
+    "ground_name": "",
+    "short_name": "",
+    "address1": "",
+    "address2": "",
+    "zip": "",
+    "map_link": "",
+    "state": "",
+    "parking_instructions": "",
+    "restroom_instructions": "",
+    "special_instructions": "",
+    "ground_prep_instructions": "",
+    "embed_link": "",
+    "is_banned": false,
+    "per_use_cost": null,
+    "is_active": false,
+    "last_updated_by": null
+}
+
+Update Ground
+
+url : http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ground/update/196/
+Method : PUT
+Json format:
+{
+    "ground_type": null,
+    "league": null,
+    "city": null,
+    "permit_source": null,
+    "ground_name": "",
+    "short_name": "",
+    "address1": "",
+    "address2": "",
+    "zip": "",
+    "map_link": "",
+    "state": "",
+    "parking_instructions": "",
+    "restroom_instructions": "",
+    "special_instructions": "",
+    "ground_prep_instructions": "",
+    "embed_link": "",
+    "is_banned": false,
+    "per_use_cost": null,
+    "is_active": false,
+    "last_updated_by": null
+}
+
+Add Ground Permit:
+
+url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ground/permit/
+Method:POST
+Json format:
+
+{"ground":180,
+"permit_time": "08:30AM",
+"permit_doc_url": "https://drive.google.com/file/d/0B1Wk5NJxDJYRSUIyczVoS2wxbXc/preview",
+"permit_dates": "6/20/2021",
+"last_updated_by": 1987
+}
+
+
+
+Update Ground Permit:
+
+url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ground/permit/update/813/
+Method:PUT
+Json format:
+
+{"ground":180,
+"permit_time": "08:30 AM",
+"permit_doc_url": "https://drive.google.com/file/d/0B1Wk5NJxDJYRSUIyczVoS2wxbXc/preview",
+"permit_dates": "06/20/2021",
+"last_updated_by": 1987
+}
+
+
+address1: "test Alameda 621003"
+address2: "test Alameda 621003"
+city: 16
+created_by: 17584
+embed_link: null
+ground_name: "Test Ground"
+ground_prep_instructions: null
+ground_type: 1
+is_active: false
+is_banned: false
+league: 1
+map_link: "https://goo.gl/maps/yJwGX"
+parking_instructions: null
+per_use_cost: "85"
+permit_source: 1
+restroom_instructions: null
+short_name: "A"
+special_instructions: null
+state: "CA"
+zip: "621003"
+
+{
+    "ground_type": 1,
+    "league": 1,
+    "city": 16,
+    "permit_source": 1,
+    "ground_name": "Test Ground",
+    "short_name": "A",
+    "address1": "test Alameda 621003",
+    "address2": "test Alameda 621003",
+    "zip": "621003",
+    "map_link": "https://goo.gl/maps/yJwGX",
+    "state": "CA",
+    "parking_instructions": None,
+    "restroom_instructions": None,
+    "special_instructions": None,
+    "ground_prep_instructions": None,
+    "embed_link": None,
+    "is_banned": false,
+    "per_use_cost": "85",
+    "is_active": false,
+    "created_by": 17584
+}
+
+{
+    "ground_type": 1,
+    "league": 1,
+    "city": 16,
+    "permit_source": 1,
+    "ground_name": "Test Ground",
+    "short_name": "A",
+    "address1": "test Alameda 621003",
+    "address2": "test Alameda 621003",
+    "zip": "621003",
+    "map_link": "https://goo.gl/maps/yJwGX",
+    "state": "CA",
+    "parking_instructions": null,
+    "restroom_instructions": null,
+    "special_instructions": null,
+    "ground_prep_instructions": null,
+    "embed_link": null,
+    "is_banned": false,
+    "per_use_cost": "85",
+    "is_active": false,
+    "created_by": 17584
+}
+
+
+
+
+
+
+ 

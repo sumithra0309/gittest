@@ -1,0 +1,52 @@
+
+Team wise Volunteer Credits:
+list url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/team/volunteercredits/
+
+Record Volunteer Credit:
+
+Record a new volunteer credit:
+season list: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/season/list/
+season based team list url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/team/list/19/  -> 19 is season_id
+player list based on team url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/player/team/list/?team_id=57
+Volunteer type list url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/volunteertype/list/
+
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/team/credits/
+Method:POST
+Payload:
+{
+    "season": null,
+    "player": null,
+    "team": null,
+    "volunteer_type": null,
+    "comments": "",
+    "performed_on": null,
+    "created_by": null
+}
+
+Retrieve team volunteer credits url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/team/credits/1/ -> 2 team_credit_id
+
+Update Team Volunteer Credit:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/team/credits/update/1/ 
+method:POST
+Payload:
+{
+    "season": null,
+    "player": null,
+    "team": null,
+    "volunteer_type": null,
+    "comments": "",
+    "performed_on": null,
+    "last_updated_by": null
+}
+
+delete volunteer credits url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/team/credits/delete/1/
+
+team credits list:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/team/credits/list/
+method:POST
+Payload:
+{"season_id":19,
+"team_id": 57
+}
+

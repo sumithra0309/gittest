@@ -1,0 +1,52 @@
+Pending article comments
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/articles/comments/list/?approved=False
+
+Approve Button:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/articles/comments/update/status/{article_comment_id}/
+Method:PUT
+Json Format:
+{
+    "is_approved": true,
+    "approved_by": 2000
+}
+
+Delete Button:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/articles/comments/delete/{article_comment_id}/ 
+Method: Delete Method
+
+
+Pending discussion responses
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/discussion/responses/list/?approved=False
+
+Approve Button:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/discussion/responses/update/status/{disccussion_response_id}/ 
+Method:POST
+Json Format:
+{"action": "approve",
+"reason": null,
+"player_id": 8310
+}
+
+Reject and Archive Button:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/discussion/responses/update/status/{disccussion_response_id}/  
+Method:POST
+Json Format:
+{"action": "reject",
+"reason": null,
+"player_id": 8310
+}
+
+Submit New Responses:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/discussion/responses/
+Method:POST
+Json Format:
+{
+    "discussion": 2175,
+    "player": 2000,
+    "description": "test new response"
+}
+

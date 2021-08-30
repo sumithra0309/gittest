@@ -1,0 +1,137 @@
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/innings/details/update/12904/  ->12904 is inning id
+method: PUT
+{"batting_details": [ { "inningbat_id":178020,
+"player":12128,
+"dismissal_type": 1,
+"fielder": 12316,
+"bowler": 22905,
+"position": 1,
+"runs":5,
+"balls_faced": 5,
+"fours": 5,
+"sixes":5,
+"last_updated_by":22905
+},  { "inningbat_id":300016,
+"player":12128,
+"dismissal_type": 1,
+"fielder": 12316,
+"bowler": 22905,
+"position": 2,
+"runs":5,
+"balls_faced": 5,
+"fours": 5,
+"sixes":5,
+"last_updated_by":22905
+},
+{ 
+"inningbat_id": null,
+"player":12128,
+"dismissal_type": 1,
+"fielder": 12316,
+"bowler": 22905,
+"position": 3,
+"runs":5,
+"balls_faced": 5,
+"fours": 5,
+"sixes":5,
+"created_by": 2000,
+"last_updated_by":22905
+}
+],
+"fall_of_wicket": [{
+"fall_of_wicket_id":12205,
+"wicket_number": 1,
+"score": 12,
+"batsman":9,
+"dismissal_type": 2,
+"last_updated_by":1987
+},
+{
+"fall_of_wicket_id":41536,
+"wicket_number": 2,
+"score": 12,
+"batsman":10,
+"dismissal_type": 3,
+"last_updated_by":1987
+},
+{
+"fall_of_wicket_id":null,
+"wicket_number": 3,
+"score": 12,
+"batsman":11,
+"dismissal_type": 4,
+"created_by": 2000,
+"last_updated_by":1987
+}
+],
+"power_plays": [{
+"power_play_id":20727,
+"over": 6,
+"power_play_number": 1,
+"bowled_by": 2000,
+"runs": 6,
+"wickets":6,
+"last_updated_by": 2000
+},
+{
+"power_play_id":null,
+"over": 7,
+"power_play_number": 2,
+"bowled_by": 2000,
+"runs": 6,
+"wickets":6,
+"created_by": 2000,
+"last_updated_by": 2000
+}
+],
+"bowling_details": [{
+"inningbowl_id": 43907,
+"bowler": 22905,
+"overs": 3.0,
+"maidens": 1,
+"runs": 1,
+"wickets": 1,
+"wides": 1,
+"noballs": 1,
+"position": 1,
+"hattricks": 1,
+"last_updated_by":2000
+},
+{
+"inningbowl_id": 43908,
+"bowler": 3726,
+"overs": 3.0,
+"maidens": 1,
+"runs": 1,
+"wickets": 1,
+"wides": 1,
+"noballs": 1,
+"position": 2,
+"hattricks": 1,
+"last_updated_by": 2000
+},
+{
+"inningbowl_id": null,
+"bowler": 3726,
+"overs": 3.0,
+"maidens": 1,
+"runs": 1,
+"wickets": 1,
+"wides": 1,
+"noballs": 1,
+"position": 3,
+"hattricks": 1,
+"created_by": 2000,
+"last_updated_by": 2000
+}
+],
+"extras": { "byes":10,
+"noballs":8,
+"wides":8,
+"penalty_runs":8,
+"extras": 8,
+"runs": 48,
+"wickets": 9,
+"last_updated_by":2000
+}
+}

@@ -1,0 +1,405 @@
+request response fields
+
+Create a new team
+{"league": 1,
+"team_name": "test team",
+"short_name": "test team",
+"captain": 1000,
+"vice_captain": 1001,
+"manager1": 8310,
+"manager2": 8310,
+"payment_contact":2000,
+"approval_ticket_id": 40,
+"created_by": 2000
+}
+
+
+
+{
+  "team_name": "Absolute XI",
+  "profile_name": "absolute",
+  "short_name": "Absolute",
+  "about_us": null,
+  "is_active": false,
+  "is_locked": false,
+  "is_dummy_team": false,
+  "photo": "public/teampics/53.jpg",
+  "city_id": 32,
+  "captain_id": 1568,
+  "vice_captain_id": 9795,
+  "manager1_id": 16229,
+  "manager2_id": 1274,
+  "payment_contact_id": 1414,
+  "league_id": 1,
+  "previous_names": "Patriot CC, Indians",
+  "updated_by": 2000
+}
+
+team update url - http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/team/update/57/
+team update json format:
+
+{"team_name": "Absolute XI",
+"profile_name": null,
+"short_name": "Absolute",
+"captain": 1568,
+"vice_captain": 9795,
+"manager1": 16229,
+"manager2": 1274,
+"payment_contact": 1414,
+"about_us": null,
+"website": "",
+"photo": null,
+"is_active": true,
+"previous_names": "Patriot CC, Indians, EDITED",
+"updated_by": 1987
+}
+
+{
+    "team_name": "Absolute XI",
+    "profile_name": "absolute",
+    "short_name": "Absolute",
+    "captain": 1001,
+    "vice_captain": 1002,
+    "manager1": 1003,
+    "manager2": 1004,
+    "payment_contact": 1414,
+    "league": 1,
+   "last_updated_by": 2000
+}
+
+
+team status update
+{
+    "is_active": true,
+    "is_locked": true
+}
+
+update note url: POST Method
+http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ticket/updates/
+ update note json format:
+{
+    "ticket": 67,
+    "is_external": false,
+    "assignment": false,
+    "is_entry_action": false,
+    "is_exit_action": false,
+    "is_closing": false,
+    "update_note": "",
+    "prioirity": 1,
+    "original_id": 68,
+    "assigned_to": 2000,
+    "updated_by": 1987
+}
+
+view ticket url:
+http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tickets/details/3AA039F5-A7DA-451D-AA4B-A50CAA8125BE/
+
+{"ticket": 67,
+"is_closing": true,
+"update_note": "test",
+"updated_by": 1987
+}
+
+
+
+
+
+
+{"batting_details": [ { "inningbat_id":66736,
+"player":12128,
+"dismissal_type": 1,
+"fielder": 12316,
+"bowler": 22905,
+"runs":5,
+"balls_faced": 5,
+"fours": 5,
+"sixes":5,
+"last_updated_by":22905
+},  { "inningbat_id":44611,
+"player":12128,
+"dismissal_type": 1,
+"fielder": 12316,
+"bowler": 22905,
+"runs":5,
+"balls_faced": 5,
+"fours": 5,
+"sixes":5,
+"last_updated_by":22905
+}
+],
+"extras": { "byes":5,
+"noballs":5,
+"wides":5,
+"penalty_runs":5,
+"last_updated_by":1987
+},
+"fall_of_wicket": [{
+"fall_of_wicket_id":19012,
+"score": 12,
+"batsman":3,
+"updated_by":1987
+},
+{
+"fall_of_wicket_id":40092,
+"score": 12,
+"batsman":4,
+"updated_by":1987
+}
+],
+"power_plays": [{
+"power_play_id":21242,
+"over": 6,
+"bowled_by": 2000,
+"runs": 6,
+"wickets":6,
+"updated_by": 2000
+}
+],
+"bowling_details": [{
+"inningbowl_id": 133679,
+"bowler": 22905,
+"overs": 3.0,
+"maidens": 1,
+"runs": 1,
+"wickets": 1,
+"wides": 1,
+"noballs": 1,
+"hattricks": 1,
+"updated_by":2000
+},
+{
+"inningbowl_id": 133680,
+"bowler": 3726,
+"overs": 3.0,
+"maidens": 1,
+"runs": 1,
+"wickets": 1,
+"wides": 1,
+"noballs": 1,
+"hattricks": 1,
+"updated_by": 2000
+}
+] 
+}
+
+
+new ground registration:
+
+url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ground/
+Method: POST
+json format:
+
+{
+    "ground_type": null,
+    "league": null,
+    "city": null,
+    "permit_source": null,
+    "ground_name": "",
+    "short_name": "",
+    "address1": "",
+    "address2": "",
+    "zip": "",
+    "map_link": "",
+    "driving_directions": "",
+    "latitude": "",
+    "longitude": "",
+    "state": "",
+    "parking_instructions": "",
+    "restroom_instructions": "",
+    "special_instructions": "",
+    "ground_prep_instructions": "",
+    "embed_link": "",
+    "is_banned": false,
+    "per_use_cost": null,
+    "has_special_notice": false,
+    "is_active": false,
+    "last_updated_by": null
+}
+
+update ground url : http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/ground/update/196/
+Method : PUT
+Json format:
+{
+    "ground_type": null,
+    "league": null,
+    "city": null,
+    "permit_source": null,
+    "ground_name": "",
+    "short_name": "",
+    "address1": "",
+    "address2": "",
+    "zip": "",
+    "map_link": "",
+    "driving_directions": "",
+    "latitude": "",
+    "longitude": "",
+    "state": "",
+    "parking_instructions": "",
+    "restroom_instructions": "",
+    "special_instructions": "",
+    "ground_prep_instructions": "",
+    "embed_link": "",
+    "is_banned": false,
+    "per_use_cost": null,
+    "has_special_notice": false,
+    "is_active": false,
+    "last_updated_by": null
+}
+
+
+add ground permit 
+
+{"ground":196,
+"permit_time": "08:30 AM",
+"permit_doc_url": "https://drive.google.com/file/d/0B1Wk5NJxDJYRSUIyczVoS2wxbXc/preview",
+"permit_dates": "01/30/2021,02/25/2021",
+"last_updated_by": 1987
+}
+ update ground permit
+
+{"ground":198,
+"permit_time": "01:30 AM",
+"permit_doc_url": "https://drive.google.com/file/d/0B1Wk5NJxDJYRSUIyczVoS2wxbXc/preview",
+"permit_dates": "02/30/2021",
+"last_updated_by": 1987
+}
+
+
+
+
+matches update:
+url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/matches/update/12904/
+Method: PUT
+Json Format:
+{
+    "home_team_capt": null,
+    "away_team_capt": null,
+    "home_team_wk": null,
+    "away_team_wk": null,
+    "umpire1": null,
+    "umpire2": null,
+    "result_desc": "",
+    "toss_won_by_team": null,
+    "batting_first_team": null,
+    "updated_by": null
+}
+
+tickets post:
+
+{
+    "ticket_status": 1,
+    "ticket_type": 46,
+    "description": "test description",
+    "priority": 1,
+    "subject": "test subject",
+    "painpoint": "test painpoint",
+    "submitted_by": 2000
+}
+
+Approvals - tickets 
+GET Ticket details through url  - http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tickets/details/6886ED43-80A1-4593-A898-BCDE69588BBF/
+
+url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tickets/update/c37e4293-12ea-4dd1-b456-6e7a53180d53/
+Method: PUT
+ticket/update - assigned_to_volunteer update
+
+{
+    "ticket_type": 46,
+    "assigned_to_volunteer": 8310,
+    "description": "test description",
+    "subject": "test subject",
+    "submitted_by": 2000,
+    "last_updated_by": 1
+}
+
+
+url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tickets/update/c37e4293-12ea-4dd1-b456-6e7a53180d53/
+Method: PUT
+ticket/update:
+
+{
+    "ticket_status": null,
+    "ticket_type": null,- mandatory
+    "match_id1": null,
+    "match_id2": null,
+    "second_team": null,
+    "uticket_id": null,
+    "assigned_to_volunteer": null,
+    "original_ticket_id": null,
+    "orig_ticket_ref_id": "",
+    "description": "", - mandatory
+    "priority": null,
+    "subject": "", - mandatory 
+    "painpoint": "",
+    "archived": false,
+    "email_address": "",
+    "submitted_by": null, - mandatory
+    "last_updated_by": null
+}
+
+
+approval_details = {
+            'articles': 0,
+            'tickets': 0,
+            'discussions': 0,
+            'match_comments': 0
+        }
+
+
+
+
+{"action": "approve",
+"reason": null,
+"player_id": 8310
+}
+
+match comments approve:
+
+url: http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/matches/comments/update/status/{match_comment_id/
+Method : POST
+Json format:
+
+{"is_approved": true,
+"approved_by": 8310
+}
+
+
+
+
+class TeamPhotoUpdateView(UpdateAPIView):
+    """ This API to Update Team Information"""
+    serializer_class = TeamPhotoUpdateSerializer
+    parser_classes = (FileUploadParser,)
+    queryset = team.objects.all()
+{
+    "league": 1,
+    "approval_ticket_id": 11853,
+    "team_name": "test team",
+    "short_name": "test",
+    "captain": 8310,
+    "vice_captain": 8310,
+    "manager1": 2000,
+    "manager2": 2000,
+    "payment_contact": 2000
+}
+
+
+
+
+
+
+{
+    "league": 1,
+    "discussion_type": 4,
+    "player": 2000,
+    "description": "test description 29/01/2021",
+    "subject": "test subject 29/01/2021"
+}
+
+
+{"action":"approve",
+"reason":"",
+"player_id": 8310
+}
+
+player__is_active=True, player__is_verified=True

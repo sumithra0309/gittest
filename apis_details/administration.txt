@@ -1,0 +1,60 @@
+Admininstration Requests:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tickets/list/admintickets/
+http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tickets/list/admintickets/?ticket_type_id=21&ticket_status_id=1
+
+
+POM Reports:
+
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/pomreports/
+method:POST
+payload:
+{"tournament_event_id": 71,
+"weekend_date": "01/26/2020"
+}
+
+Recent Logins:
+
+url::http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/recentlogins/?status=True&page_size=100
+status=True -> for login Success
+status=False  -> for login Failure
+
+Recent Registration Free Agent:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/recentregistration/
+
+Recent Registration Joined Team:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/recentjoinings/
+
+Recent Player Transfers:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/recenttransfers/
+
+Recent Match Report Approvals:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/recentreportapprovals/
+
+Merge Player Profiles:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tickets/list/mergeplayerprofiles/
+
+Strategic Items:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tickets/list/strategictickets/
+
+Web admin Requests:
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tickets/list/webadmintickets/
+url:http://ec2-52-66-252-73.ap-south-1.compute.amazonaws.com:8000/api/tickets/list/webadmintickets/?ticket_type_id=9&ticket_status_id=1
+
+
+{
+        "first_name": "Admin",
+        "last_name": "Tspurs",
+        "email": "admn.tspurs@gmail.com",
+        "phone": "9123456789",
+        "is_active": true,
+        "linkedin_url": "https://www.linkedin.com/in/satheesh-kumar-a6750315/",
+        "facebook_url": "https://www.facebook.com/satheesh.kumar.777",
+        "batting_skill": 7,
+        "bowling_skill": 9,
+        "fielding_pref": 16,
+        "display_image": true,
+        "subscribe_new_posts": false,
+        "roles": [3, 4],
+        "created_by": 2000
+}
+      
